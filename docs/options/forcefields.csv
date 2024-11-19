@@ -1,7 +1,7 @@
 Keyword,Description,Option Type,Required if using
 amber_ff,Amber forcefield for point charges (ex. ff19SB),string,Amber
 env_path,"Path to environment; use conda env list to find this path; (ex. user/miniconda3/envs/sparcle_qc/)",string,Amber
-charmm_rtf,Path to CHARMM .rtf file of desired CHARM force field,string,CHARMM
+charmm_rtf,Path to CHARMM .rtf file of desired CHARMM force field,string,CHARMM
 charmm_prm,Path to CHARMM .prm file of desired CHARMM force field,string,CHARMM
 water_model,Desired water model (ex. TIP3P or OPC),string,Amber or CHARMM
 o_charge,"Custom oxygen charge for water, optional",float,

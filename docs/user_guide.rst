@@ -4,6 +4,25 @@ User Guide
 General Information
 *********************
 
+.. dropdown:: Tips for Input
+
+    .. role:: python(code)
+        :language: python
+    
+    Sparcle_QC depends on a properly formatted PDB file. Make sure your PDB follows the standard format. Sparcle_QC does not require occupancy, temperature factor, segment identifier, or formal charge, but it does require all other columns. 
+
+    **CHARMM vs Amber**
+
+    If using CHARMM, add a psf file (downloaded from CHARMM-GUI) to your working directory. Point to the psf file in the Sparcle_QC input with keyword :python:`charmm_psf`. Add the protein PDB's path under the :python:`pdb_file` keyword. Separately add the ligand named "ligand.pdb" to your working directory.
+
+    If using Amber, the :python:`pdb_file` path must point to a PDB with the complex (both the protein and ligand included). Make sure the ligand atoms have "HETATM" in columns 1-6 of the PDB.
+
+    **On capping terminal residues**
+
+    If uploading a PDB with terminal residues already capped with NME and ACE, the following atom names should be used in columns 13-16: hydrogens in NME and ACE should be named H1, H2, and H, the carbon in NME should be named C. Additionally, the peptidic hydrogen (on the backbone nitrogen) of the terminal residues should be named H, not H1. In the Sparcle_QC input file, set :python:`pre-capped: true`. 
+
+    If uploading a PDB without endcaps on terminal residues, Sparcle_QC will automatically handle the tasks above.
+
 .. dropdown:: Cutting and Capping Bonds
     
     Alpha carbon - carbonyl carbon bonds are cut to separate the QM region from the MM region. 
