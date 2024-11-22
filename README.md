@@ -3,7 +3,9 @@
 
 <p align="left">
     <picture>
-    <img alt="Sparcle_QC logo" src="https://github.com/carolinesargent/sparcle_qc/blob/main/docs/_static/sparcle_logo.png" height="150px">
+        <source media="(prefers-color-scheme: light)" srcset="https://github.com/carolinesargent/sparcle_qc/blob/main/docs/_static/sparcle_logo.png">
+        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/carolinesargent/sparcle_qc/blob/main/docs/_static/index-dark-sparcle_logo.png">
+        <img alt="Sparcle_QC logo" src="https://github.com/carolinesargent/sparcle_qc/blob/main/docs/_static/sparcle_logo.png" height="150px">
     </picture>
 </p>
 

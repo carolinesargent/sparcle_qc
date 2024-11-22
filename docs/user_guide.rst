@@ -291,7 +291,6 @@ Example Inputs
         fisapt_partition: true
         basis_set: aug-cc-pv(D+d)z
         amber_ff: ff19SB
-        env_path: /user/miniconda3/envs/sparcle_qc/
         water_model: opc
         o_charge: 0
         h_charge: 0.6791
@@ -335,7 +334,6 @@ Example Inputs
         method: hf 
         basis_set: aug-cc-pv(D+d)z
         amber_ff: ff19SB
-        env_path: /usr/miniconda3/envs/emb_sapt/
         water_model: opc
         o_charge: 0
         h_charge: 0.6791
@@ -363,7 +361,6 @@ Example Inputs
         method: fisapt0
         basis_set: aug-cc-pv(D+d)z
         amber_ff: ff19SB
-        env_path: /user/miniconda3/envs/sparcle_qc/
         water_model: opc
         o_charge: 0
         h_charge: 0.6791
@@ -385,7 +382,6 @@ Example Inputs
         method: fisapt0
         basis_set: aug-cc-pv(D+d)z
         amber_ff: ff19SB
-        env_path: /user/miniconda3/envs/sparcle_qc/
         water_model: opc
         o_charge: 0
         h_charge: 0.6791
@@ -413,7 +409,6 @@ Example Inputs
             'method': 'fisapt0',
             'basis_set': 'aug-cc-pv(D+d)z',
             'amber_ff': 'ff19SB',
-            'env_path': '/usr/miniconda3/envs/emb_sapt/',
             'water_model': 'opc' ,
             'o_charge': 0,
             'h_charge': 0.6791,

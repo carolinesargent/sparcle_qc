@@ -28,12 +28,26 @@ Sparcle_QC is a Python package that automatically creates QM/MM-like input files
    :width: 1000px
 
 
-.. grid:: 1 1 2 2
+.. grid:: 1 
+    
+   .. grid-item-card:: Installation
+      :margin: 0 3 0 0
+      
+      Learn how to install Sparcle_QC
 
+      .. button-link:: ./installation.html
+         :color: primary
+         :outline:
+         :expand:
+
+         To the Installation Guide
+
+.. grid:: 1 1 2 2
+   
     .. grid-item-card:: Getting Started
       :margin: 0 3 0 0
       
-      Learn the basics of using sparcle_qc.
+      Learn the basics of using Sparcle_QC.
 
       .. button-link:: ./getting_started.html
          :color: primary
@@ -61,7 +75,7 @@ Sparcle_QC is a Python package that automatically creates QM/MM-like input files
     .. grid-item-card:: API Reference
       :margin: 0 3 0 0
       
-      How to use the API of sparcle_qc.
+      How to use the API of Sparcle_QC.
 
       .. button-link:: ./api.html
          :color: primary
@@ -75,7 +89,7 @@ Sparcle_QC is a Python package that automatically creates QM/MM-like input files
     .. grid-item-card::  Developer Guide
       :margin: 0 3 0 0
       
-      How to contribute to sparcle_qc.
+      How to contribute to Sparcle_QC.
 
       .. button-link:: ./developer_guide.html
          :color: primary
@@ -90,6 +104,7 @@ Sparcle_QC is a Python package that automatically creates QM/MM-like input files
    :hidden:
    :titlesonly:
 
+   installation
    getting_started
    user_guide
    api
