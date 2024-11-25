@@ -287,8 +287,15 @@ def run_cap(ff_type:str, rtf:str = None, prm:str = None) -> None:
         PARM_PATH = f'{path_to_env}/dat/leap/parm/parm19.dat' 
         cap(no_HL, num_broken_bonds, PDB_PATH, MOL2_PATH, CAPPED_PDB_PATH, ff_type ='amber', PARM_PATH = PARM_PATH)
     else:
-        rtf_file = '../' + rtf
-        prm_file = '../' + prm
+        if os.path.isabs(rtf):
+            rtf_file = rtf
+        else:
+            rtf_file = '../' + rtf
+        
+        if os.path.isabs(prm):
+            prm_file = prm
+        else:
+            prm_file = '../' + prm
         
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
