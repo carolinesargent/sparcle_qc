@@ -58,7 +58,6 @@ or by passing a dictionary of inputs:
     'method': 'hf',
     'basis_set': 'aug-cc-pv(D+d)z',
     'amber_ff': 'ff19SB',
-    'env_path': f'path/to/conda/env/sparcle_qc',
     'software': 'psi4',
     }
 
